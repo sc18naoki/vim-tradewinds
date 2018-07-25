@@ -79,7 +79,7 @@ function! tradewinds#softmove(dir) abort
   call win_gotoid(l:targetid)
 
   " ..and make the split
-  execute l:flags 'new'
+  execute l:flags 'new %'
 
   " edit existing buffer
   silent execute 'buffer' l:bufnr
